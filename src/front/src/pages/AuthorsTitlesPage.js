@@ -1,5 +1,7 @@
 import { useEffect, React, useState } from "react";
 
+import "./AuthorsTitlesPage.css";
+
 import Layout from "../components/Layout";
 import { Footer } from "../components/Footer";
 
@@ -25,7 +27,7 @@ export const AuthorsTitlesPage = () => {
   return (
     <div className="AuthorsTitlesPage">
       <Layout />
-      <div>
+      <div className="titles">
         <p>{atitles[0].author}, {atitles[0].title}</p>
         <p>{atitles[1].author}, {atitles[1].title}</p>
         <p>{atitles[2].author}, {atitles[2].title}</p>
