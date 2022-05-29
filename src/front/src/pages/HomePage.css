@@ -1,8 +1,14 @@
 .book-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.1)),url("../../public/img/book_1.jpg");
-    height: 1000px;
+    background-image: url("./img/book_1.jpg");
+    height: 800px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+@media(max-width: 767px) {
+    .book-image {
+        height: 450px;
+    }
 }
