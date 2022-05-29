@@ -1,16 +1,20 @@
 import './App.css';
-import { Footer } from './components/Footer';
-import PostForm from './components/PostForm';
-import AddBookForm from './components/AddBookForm';
-import { Navbar } from './components/Navbar';
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+import { AuthorsTitlesPage } from './pages/AuthorsTitlesPage';
+import { InputBookPage } from './pages/InputBookPage';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <AddBookForm />
-      <Footer />
-    </div>
+      <Router>
+        <Routes>
+          <Route path="/atitles/:author" element={<AuthorsTitlesPage />} />
+          <Route path="/inputBook" element={<InputBookPage />} />
+        </Routes>
+      </Router>
+    </div >
   );
 }
 

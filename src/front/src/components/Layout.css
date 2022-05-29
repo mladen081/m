@@ -1,0 +1,34 @@
+.topnav-l {
+    background-color: #6a67ce;
+    
+    text-align: center;
+    color: #000;
+}
+
+.topnav-l ul {
+    text-transform: lowercase;
+    list-style: none;
+    font-size: 1.8em;
+}
+
+.topnav-l ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.topnav-l ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.topnav-l ul li a:hover,
+.topnav-l ul li a:focus,
+.topnav-l ul li a:active {
+    color: #eef3d2;
+}
+
+@media(max-width: 767px) {
+    .topnav-l ul {
+        font-size: 1.2em;
+    }
+}
