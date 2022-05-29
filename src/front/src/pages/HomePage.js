@@ -8,6 +8,7 @@ export const HomePage = () => {
   return (
     <div className="HomePage">
       <Layout />
+      <div className="book-image"></div>
       <Footer />
     </div>
   );
