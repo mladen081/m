@@ -11,7 +11,7 @@ const Layout = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/atitles/:author">Titles</Link>
+            <Link to="/atitles/">Authors</Link>
           </li>
           <li>
             <Link to="/inputBook">Add Book</Link>

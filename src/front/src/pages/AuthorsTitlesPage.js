@@ -5,7 +5,7 @@ import "./AuthorsTitlesPage.css";
 import Layout from "../components/Layout";
 import { Footer } from "../components/Footer";
 
-export const AuthorsTitlesPage = () => {
+export const AuthorsTitlesPage = (props) => {
 
   const [atitles, setATitles] = useState();
 
@@ -22,17 +22,26 @@ export const AuthorsTitlesPage = () => {
     [] // when to run useEffect (when the components loads)
   );
 
-  if (!atitles) return null;
+  let a = [];
 
+  for (const key in atitles) {
+
+    if (atitles[key].author === "Lav Tolstoj ") {
+      a.push(atitles[key].title);
+    }
+  }
+
+  if (!atitles) return null;
+  
   return (
     <div className="AuthorsTitlesPage">
       <Layout />
       <div className="titles">
-        <p>{atitles[0].author}, {atitles[0].title}</p>
-        <p>{atitles[1].author}, {atitles[1].title}</p>
-        <p>{atitles[2].author}, {atitles[2].title}</p>
-        <p>{atitles[3].author}, {atitles[3].title}</p>
-        <p>{atitles[4].author}, {atitles[4].title}</p>
+      {a.map(title => (  
+          <p key="{title}">  
+            {title}  
+          </p>  
+        ))}  
       </div>
       <Footer />
     </div>
