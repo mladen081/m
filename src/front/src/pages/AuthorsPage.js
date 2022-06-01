@@ -25,7 +25,7 @@ export const AuthorsPage = (props) => {
   let a = [];
 
   for (const key in atitles) {
-      a.push(atitles[key].author);
+    a.push(atitles[key].author);
   }
 
   let uniqueAuthors = [...new Set(a)];
@@ -37,11 +37,13 @@ export const AuthorsPage = (props) => {
       <Layout />
       <div className="authors">
         <ul className="athors-list">
-        {uniqueAuthors.map(author => (  
-          <li key="{author}">  
-            <Link to={{pathname:"/atitles/:authors", state:{author}}}>{author}</Link>
-          </li>  
-        ))} 
+          {uniqueAuthors.map(author => (
+            <li key="{author}">
+              <Link to={`/atitles/${author}`}>{author}</Link>
+              {/* <button onClick={() => console.log(author)}>A</button> */}
+
+            </li>
+          ))}
         </ul>
 
         <Outlet />
