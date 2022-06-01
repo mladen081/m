@@ -1,17 +1,17 @@
 .book-form-wraper {
-    background-color: #947ec3;
+    background-color: #6ebf8b;
     text-align: center;
 }
 
 .form {
-    padding: 150px 0;
+    padding: 170px 0;
 }
 
 input {
     text-align: center;
     width: 20em;
-    background-color: #eef3d2;
-    color: #6a67ce;
+    background-color: #dadbbd;
+    color: #151d3b;
     font-size: 1.5em;
     margin: 5px 0;
 }
@@ -23,12 +23,12 @@ input {
     margin-top: 30px;
     width: 20em;
     font-size: 1.5em;
-    background-color: #eef3d2;
-    color: #000;
+    background-color: #151d3b;
+    color: #dadbbd;
 }
 
 .book-form-wraper button:hover {
-    background-color: #b689c0;
+    background-color: #d82148;
 }
 
 @media(max-width: 767px) {

@@ -4,6 +4,7 @@ import { Outlet, Link } from "react-router-dom";
 
 import Layout from "../components/Layout";
 import { Footer } from "../components/Footer";
+import "./AuthorsPage.css";
 
 export const AuthorsPage = (props) => {
 

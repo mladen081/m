@@ -1,8 +1,8 @@
 .topnav-l {
-    background-color: #6a67ce;
+    background-color: #151d3b;
     
     text-align: center;
-    color: #000;
+    color: #dadbbd;
 }
 
 .topnav-l ul {
@@ -17,14 +17,14 @@
 }
 
 .topnav-l ul li a {
-    color: #000;
+    color: #dadbbd;
     text-decoration: none;
 }
 
 .topnav-l ul li a:hover,
 .topnav-l ul li a:focus,
 .topnav-l ul li a:active {
-    color: #eef3d2;
+    color: #6ebf8b;
 }
 
 @media(max-width: 767px) {

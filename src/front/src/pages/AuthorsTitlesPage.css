@@ -1,10 +1,11 @@
 .titles {
-    min-height: 600px;
+    min-height: 400px;
     text-align: center;
-    background-color: #b689c0;
-    padding-top: 40px;
+    background-color: #dadbbd;
+    padding: 100px;
 }
 
 .titles p {
-    font-size: 1.4em;
+    font-size: 1.7em;
+    color: #151d3b;
 }
