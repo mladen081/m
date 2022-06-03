@@ -45,6 +45,9 @@ export const AuthorsTitlesPage = (props) => {
     <div className="AuthorsTitlesPage">
       <Layout />
       <div className="titles">
+        <div className="section-header">
+          <h1>{params.authors}</h1>
+        </div>
         {title.map(title => (
           <p>
             {title}
