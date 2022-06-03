@@ -1,4 +1,4 @@
-import { useEffect, React, useState, useLayoutEffect } from "react";
+import { useEffect, React, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import "./AuthorsTitlesPage.css";
@@ -26,19 +26,16 @@ export const AuthorsTitlesPage = (props) => {
     [] // when to run useEffect (when the components loads)
   );
 
-  // useLayoutEffect(() => {
-  //   let mounted = true;
-  //   console.log(params);
-  //   return () => (mounted = false);
-  // }, []);
-
-
-  let a = [];
+  let bookId = [];
+  let title = [];
+  let country = [];
 
   for (const key in atitles) {
 
     if (atitles[key].author === params.authors) {
-      a.push(atitles[key].title);
+      bookId.push(atitles[key].bookId);
+      title.push(atitles[key].title);
+      country.push(atitles[key].country);
     }
   }
 
@@ -48,8 +45,8 @@ export const AuthorsTitlesPage = (props) => {
     <div className="AuthorsTitlesPage">
       <Layout />
       <div className="titles">
-        {a.map(title => (
-          <p key="{title}">
+        {title.map(title => (
+          <p>
             {title}
           </p>
         ))}

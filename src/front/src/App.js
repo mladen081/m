@@ -2,8 +2,6 @@ import './App.css';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import { useLocation } from 'react-router-dom';
-
 import { HomePage } from './pages/HomePage';
 import { AuthorsTitlesPage } from './pages/AuthorsTitlesPage';
 import { AuthorsPage } from './pages/AuthorsPage';
@@ -16,7 +14,7 @@ function App(props) {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/atitles/" element={<AuthorsPage />} />
+          <Route path="/authors/" element={<AuthorsPage />} />
           <Route path="/atitles/:authors" element={<AuthorsTitlesPage />} />
           <Route path="/inputBook" element={<InputBookPage />} />
         </Routes>
