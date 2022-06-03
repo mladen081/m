@@ -1,5 +1,6 @@
 import { useEffect, React, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 
 import "./AuthorsTitlesPage.css";
 
@@ -44,13 +45,16 @@ export const AuthorsTitlesPage = (props) => {
         <div className="section-header">
           <h1>{params.authors}</h1>
         </div>
-        {title.map(title => (
-          <div className="one-title">
-            <p>
-              {title}
-            </p>
-          </div>
-        ))}
+        <div className="books">
+          {title.map(title => (
+            <div className="one-title">
+              <p>
+                {title}
+              </p>
+            </div>
+          ))}
+        </div>
+        <Link to={`/authors`} className="back">Back</Link>
       </div>
       <Footer />
     </div>
