@@ -11,6 +11,15 @@
     padding: 30px 0;
 }
 
+.titles .one-title {
+    margin: 0.5em auto;
+    width: 300px;
+    color:  transparent;
+    border: 1px solid #d82148;
+    border-radius: 15px;
+
+}
+
 .titles p {
     font-size: 1.7em;
     color: #151d3b;
