@@ -48,10 +48,10 @@ export const AuthorsTitlesPage = (props) => {
           {title.map(title => (
             <div className="one-title">
               <p>
-                {title[0]}
+                {title[1]}
               </p>
               <p>
-                {title[1]}
+                {title[0]}
               </p>
             </div>
           ))}
