@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
 
 .topnav-l {
-    background-color: #151d3b;
-    
+    background-color: #090089;
     text-align: center;
-    color: #dadbbd;
 }
 
 .topnav-l ul {
     text-transform: lowercase;
     list-style: none;
     font-size: 1.8em;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
 }
 
 .topnav-l ul li {
@@ -20,18 +19,18 @@
 }
 
 .topnav-l ul li a {
-    color: #dadbbd;
+    color: #fff;
     text-decoration: none;
 }
 
 .topnav-l ul li a:hover,
 .topnav-l ul li a:focus,
 .topnav-l ul li a:active {
-    color: #6ebf8b;
+    color: #FCDC74;
 }
 
 @media(max-width: 767px) {
     .topnav-l ul {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 }

@@ -1,6 +1,6 @@
 import { useEffect, React, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./AuthorsTitlesPage.css";
 
@@ -19,7 +19,6 @@ export const AuthorsTitlesPage = (props) => {
       const fetchTitles = async () => {
         const response = await fetch('http://localhost:8080/getAllBooks');
         const data = await response.json();
-        console.log(data);
         setATitles(data);
       };
       fetchTitles();
@@ -32,7 +31,7 @@ export const AuthorsTitlesPage = (props) => {
   for (const key in atitles) {
 
     if (atitles[key].author === params.authors) {
-      title.push(atitles[key].title);
+      title.push([atitles[key].title, atitles[key].bookId]);
     }
   }
 
@@ -49,7 +48,10 @@ export const AuthorsTitlesPage = (props) => {
           {title.map(title => (
             <div className="one-title">
               <p>
-                {title}
+                {title[0]}
+              </p>
+              <p>
+                {title[1]}
               </p>
             </div>
           ))}

@@ -1,5 +1,5 @@
 .book-form-wraper {
-    background-color: #6ebf8b;
+    background-color: #91CEFF;
     text-align: center;
 }
 
@@ -10,25 +10,25 @@
 input {
     text-align: center;
     width: 20em;
-    background-color: #dadbbd;
+    background-color: #fff;
     color: #151d3b;
     font-size: 1.5em;
     margin: 5px 0;
 }
 ::placeholder {
-    color: #000;
+    color: #0060CA;
 }
 
 .book-form-wraper button {
     margin-top: 30px;
     width: 20em;
     font-size: 1.5em;
-    background-color: #151d3b;
-    color: #dadbbd;
+    background-color: transparent;
+    color: #fff;
 }
 
 .book-form-wraper button:hover {
-    background-color: #d82148;
+    background-color: #0060CA;
 }
 
 @media(max-width: 767px) {
