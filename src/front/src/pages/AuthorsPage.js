@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 import { Footer } from "../components/Footer";
 import "./AuthorsPage.css";
 
-export const AuthorsPage = (props) => {
+export const AuthorsPage = () => {
 
   const [atitles, setATitles] = useState();
 
@@ -29,7 +29,7 @@ export const AuthorsPage = (props) => {
     a.push(atitles[key].author);
   }
 
-  let uniqueAuthors = [...new Set(a)];
+  let uniqueAuthors = [...new Set(a)].sort();
 
   if (!atitles) return null;
 

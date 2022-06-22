@@ -7,7 +7,7 @@ import "./AuthorsTitlesPage.css";
 import Layout from "../components/Layout";
 import { Footer } from "../components/Footer";
 
-export const AuthorsTitlesPage = (props) => {
+export const AuthorsTitlesPage = () => {
 
   const [atitles, setATitles] = useState();
 
@@ -45,7 +45,7 @@ export const AuthorsTitlesPage = (props) => {
           <h1>{params.authors}</h1>
         </div>
         <div className="books">
-          {title.map(title => (
+          {title.map(title => ( 
             <div className="one-title">
               <p>
                 {title[1]}
